@@ -49,6 +49,10 @@ dependencies {
     debugImplementation 'com.ashokvarma.android:gander-imdb:3.1.0'
     releaseImplementation 'com.ashokvarma.android:gander-no-op:3.1.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
+    implementation "androidx.room:room-guava:2.2.5"
+    implementation "androidx.room:room-runtime:2.2.5"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

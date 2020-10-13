@@ -1,13 +1,21 @@
 package com.laioffer.tinnews.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Objects;
 
+@Entity
 public class Article {
     public String author;
     public String content;
     public String description;
     public String publishedAt;
     public String title;
+
+    @NonNull
+    @PrimaryKey
     public String url;
     public String urlToImage;
 
@@ -21,7 +29,7 @@ public class Article {
                 Objects.equals(description, article.description) &&
                 Objects.equals(publishedAt, article.publishedAt) &&
                 Objects.equals(title, article.title) &&
-                Objects.equals(url, article.url) &&
+                url.equals(article.url) &&
                 Objects.equals(urlToImage, article.urlToImage);
     }
 
